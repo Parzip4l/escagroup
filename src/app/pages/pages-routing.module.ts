@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CarrersComponent } from './carrers/carrers.component';
 import { IndexComponent } from './index/index.component';
 import { Index2Component } from './index2/index2.component';
 import { Index3Component } from './index3/index3.component';
@@ -35,6 +36,10 @@ const routes: Routes = [
     {
         path: 'index-6',
         component: Index6Component
+    },
+    {
+        path: 'carrers',
+        component: CarrersComponent
     }
 ];
 

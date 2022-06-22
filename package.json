@@ -1,6 +1,6 @@
 {
-  "name": "lezir",
-  "version": "0.0.0",
+  "name": "escaweb",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -23,7 +23,11 @@
     "@ng-bootstrap/ng-bootstrap": "^6.1.0",
     "@nicky-lenaers/ngx-scroll-to": "^9.0.0",
     "angular-feather": "^6.0.9",
+    "angular-isotope": "^0.1.14",
     "bootstrap": "^4.4.1",
+    "isotope-layout": "^3.0.6",
+    "jquery": "^3.6.0",
+    "ngx-isotope": "^0.1.7",
     "ngx-youtube-player": "^7.1.5",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
@@ -36,6 +40,7 @@
     "@angular/language-service": "~9.0.2",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/jquery": "^3.5.14",
     "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
     "jasmine-core": "~3.5.0",

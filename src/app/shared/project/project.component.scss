@@ -1,0 +1,64 @@
+.button {
+  border: none;
+  background-color: transparent;
+  font-weight : 700;
+}
+
+.button:hover {
+  color : #049825;
+}
+
+.button:active,
+.button.is-checked {
+  color : #049825;
+  outline: none;
+  font-weight: 700;
+}
+
+.button-group {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.button-group:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.grid article {
+  background-color: #FFFFFF;
+  display: block;
+  float: left;
+  margin: 1%;
+  width: 23%;
+}
+
+@media (max-width: 1024px) {
+  .grid article {
+    width: 31.3%;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid article {
+    width: 48%;
+  }
+}
+
+@media (max-width: 479px) {
+  .grid article {
+    margin: 2% 0;
+    width: 100%;
+  }
+}

@@ -31,7 +31,11 @@
               "src/assets/scss/style.scss",
               "src/assets/css/materialdesignicons.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/masonry-layout/dist/masonry.pkgd.min.js",
+              "node_modules/isotope-layout/dist/isotope.pkgd.min.js"
+            ]
           },
           "configurations": {
             "production": {
