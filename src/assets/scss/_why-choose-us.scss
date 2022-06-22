@@ -5,6 +5,7 @@
 .wc-box {
     box-shadow: $box-shadow;
     margin-bottom: 30px;
+    background-color : #fff;
     .wc-box-icon {
         font-size: 30px;
         height: 60px;
@@ -42,7 +43,7 @@
                 color: #{$value};
             }
             &:hover {
-                background: #{$value};
+                background: #049825;
                 box-shadow: 0 5px 18px rgba($value, 0.4);
             }
         }

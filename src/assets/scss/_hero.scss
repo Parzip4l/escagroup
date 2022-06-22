@@ -49,6 +49,30 @@
     }
 }
 
+span.subtitle {
+    text-transform: uppercase;
+    color: #049825;
+    letter-spacing: 2px;
+}
+
+.button-hijau a {
+    background-color: #049825;
+    padding: 15px 50px;
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 0 3px 10px #28a745;
+    transition: all 0.5s;
+}
+
+.button-hijau {
+    transition: all 0.5s;
+}
+
+.button-hijau:hover {
+    transform: translateY(6px);
+    transition: all 0.5s;
+}
+
 
 
 // Hero 2

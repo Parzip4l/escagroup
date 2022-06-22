@@ -14,9 +14,10 @@ import { Index3Component } from './index3/index3.component';
 import { Index4Component } from './index4/index4.component';
 import { Index5Component } from './index5/index5.component';
 import { Index6Component } from './index6/index6.component';
+import { CarrersComponent } from './carrers/carrers.component';
 
 @NgModule({
-  declarations: [IndexComponent, Index2Component, Index3Component, Index4Component, Index5Component, Index6Component],
+  declarations: [IndexComponent, Index2Component, Index3Component, Index4Component, Index5Component, Index6Component, CarrersComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,
