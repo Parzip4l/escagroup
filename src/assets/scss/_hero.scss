@@ -49,6 +49,17 @@
     }
 }
 
+.hero-1-bg.section-sub {
+    margin-top: 80px;
+    padding: 130px 0 110px;
+    background: rgba($primary, 0.025);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
 span.subtitle {
     text-transform: uppercase;
     color: #049825;

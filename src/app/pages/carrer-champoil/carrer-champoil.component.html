@@ -1,0 +1,214 @@
+<!--Navbar Start-->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark" (window:scroll)="windowScroll()"
+  id="navbar" style="background: #fff; box-shadow: 0 0 10px 0 rgb(0 0 0 / 6%);">
+  <div class="container">
+    <!-- LOGO -->
+    <a class="navbar-brand logo" href="/">
+      <img src="assets/images/escalogo.png" alt="Esca Group Logo" class="logo-dark" height="45" />
+      <img src="assets/images/escalogo.png" alt="Esca Group Logo" class="logo-light" height="45" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+      <i class="mdi mdi-menu"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
+          <a href="../" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}">
+          <a href="javascript: void(0);" [ngxScrollTo]="'#features'" class="nav-link">About</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'pricing'}">
+          <a href="javascript: void(0);" [ngxScrollTo]="'#pricing'" class="nav-link"
+            [ngxScrollToOffset]="5">Division</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'blog'}">
+          <a href="javascript: void(0);" [ngxScrollTo]="'#blog'" class="nav-link" [ngxScrollToOffset]="5">News</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'carrers'}">
+          <a href="javascript: void(0);" [ngxScrollTo]="'#carrers'" class="nav-link" [ngxScrollToOffset]="5">Carrers</a>
+        </li>
+        <li class="nav-item" [ngClass]="{'active':currentSection === 'contact'}">
+          <a href="javascript: void(0);" [ngxScrollTo]="'#contact'" class="nav-link" [ngxScrollToOffset]="5">Contact</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav navbar-center">
+        <li class="nav-item">
+          <a href="javascript: void(0);" class="nav-link" (click)="loginModal(content)">Log
+            in</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+<div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+  <!-- Hero Start -->
+  <section class="hero-1-bg section-sub mt-10 d-none" style="background-image: url(assets/images/bg-champoil.jpg)" id="home">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-12">
+          <h1 class="hero-1-title text-white font-weight-bold mb-4 text-center">Carrers - City Guard</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+  <section class="section new-section">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-12 ">
+                <div class="not-availablejob">
+                  <img src="assets/images/not-available.png" alt="carrers" class="img-fluid mx-auto img-custom">
+                  <div class="title-not-available">
+                    <h3>Not Available Job For Now !</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra risus, auctor dui magna platea dui.
+                      Malesuada dignissim tempus at quisque iaculis arcu.
+                      Ut tellus lobortis ornare lobortis. Sit sit odio quis egestas mattis
+                      lorem eu tristique enim.</p> 
+                  </div>
+                </div>
+                    <div class="title-new d-none">
+                      <span class="font-weight-bold text-uppercase text-dark mb-2 subtitle-big text-center">Cityguard</span>
+                      <h3 class="font-weight-bold text-dark line-height-1_4 mb-4 text-center">New Job For Apply</h3>
+                      <div class="separator-hijau mb-4 w-10 center"></div>
+                  </div>
+              </div>
+              <div class="col-lg-12">
+                  <div class="carrers-list-wrap d-none">
+                      <div class="row">
+                          <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="card-job">
+                                  <div class="body-card-job">
+                                      <p class="categories-job">Full Time</p>
+                                      <div class="title-job-available">
+                                          <img src="assets/images/cityguard-logo.png" alt="logo arah kopi" class="img-fluid mx-auto">
+                                          <h4 class="name-job">Anggota Security</h4>
+                                          <span class="job-place">PT. KHARISMA ADHI SEJAHTERA</span>
+                                      </div>
+                                      <div class="footer-card-job">
+                                          <div class="provinsi">
+                                              <i class="fa fa-map-marker"></i>
+                                              <h5>DKI Jakarta</h5>
+                                          </div>
+                                          <div class="kota">
+                                              <h5>Kota Adm Jakarta</h5>
+                                          </div>
+                                      </div>
+                                      <div class="button-card">
+                                          <a href="" class="">Apply Job</a>   
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="card-job">
+                                  <div class="body-card-job">
+                                      <p class="categories-job">Full Time</p>
+                                      <div class="title-job-available">
+                                          <img src="assets/images/cityguard-logo.png" alt="logo arah kopi" class="img-fluid mx-auto">
+                                          <h4 class="name-job">Anggota Security</h4>
+                                          <span class="job-place">PT. KHARISMA ADHI SEJAHTERA</span>
+                                      </div>
+                                      <div class="footer-card-job">
+                                          <div class="provinsi">
+                                              <i class="fa fa-map-marker"></i>
+                                              <h5>DKI Jakarta</h5>
+                                          </div>
+                                          <div class="kota">
+                                              <h5>Kota Adm Jakarta</h5>
+                                          </div>
+                                      </div>
+                                      <div class="button-card">
+                                          <a href="" class="">Apply Job</a>   
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-sm-12">
+                              <div class="card-job">
+                                  <div class="body-card-job">
+                                      <p class="categories-job">Full Time</p>
+                                      <div class="title-job-available">
+                                          <img src="assets/images/cityguard-logo.png" alt="logo arah kopi" class="img-fluid mx-auto">
+                                          <h4 class="name-job">Anggota Security</h4>
+                                          <span class="job-place">PT. KHARISMA ADHI SEJAHTERA</span>
+                                      </div>
+                                      <div class="footer-card-job">
+                                          <div class="provinsi">
+                                              <i class="fa fa-map-marker"></i>
+                                              <h5>DKI Jakarta</h5>
+                                          </div>
+                                          <div class="kota">
+                                              <h5>Kota Adm Jakarta</h5>
+                                          </div>
+                                      </div>
+                                      <div class="button-card">
+                                          <a href="" class="">Apply Job</a>   
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="button-back">
+                      <a href="carrers">Carrers Page</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <app-blog></app-blog>
+  <app-footer></app-footer>
+</div>
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-body">
+    <div class="text-center">
+      <h3 class="title mb-4">Welcome To Esca</h3>
+      <h4 class="text-uppercase text-primary"><b>Login</b></h4>
+    </div>
+    <div class="login-form mt-4">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Username / Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Youremail@gmail.com">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <a href="javascript: void(0);" class="float-right text-muted font-size-15">Forgot Password.?</a>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="customCheck1">
+          <label class="custom-control-label font-size-15" for="customCheck1">Remember Me</label>
+        </div>
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-primary">Login <i-feather class="icon-size-15 icon ml-1"
+              name="arrow-right-circle"></i-feather></button>
+        </div>
+      </form>
+      <div class="position-relative text-center mt-4">
+        <span class="login-border"></span>
+        <p class="social-login text-muted font-size-17">Social Login</p>
+      </div>
+      <div class="text-center">
+        <ul class="list-inline mt-2 mb-3">
+          <li class="list-inline-item mr-3"><a href="javascript: void(0);" class="login-social-icon icon-primary">
+              <i-feather class="icon-xs" name="facebook"></i-feather>
+            </a></li>
+          <li class="list-inline-item mr-3"><a href="javascript: void(0);" class="login-social-icon icon-info">
+              <i-feather class="icon-xs" name="twitter"></i-feather>
+            </a></li>
+          <li class="list-inline-item mr-3"><a href="javascript: void(0);" class="login-social-icon icon-danger">
+              <i-feather class="icon-xs" name="instagram"></i-feather>
+            </a></li>
+          <li class="list-inline-item"><a href="javascript: void(0);" class="login-social-icon icon-success">
+              <i-feather class="icon-xs" name="linkedin"></i-feather>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ng-template>

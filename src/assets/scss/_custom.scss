@@ -1,0 +1,223 @@
+section.section.new-section {
+    margin : 50px 0;
+    background-attachment: fixed;
+}
+
+.carrers-list-wrap {
+    padding: 50px 0;
+}
+
+.carrers-list-wrap figure {
+    padding: 0 0 15px 0;
+}
+
+.image-carrers {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.image-carrers img {
+    transition: transform .5s ease;
+}
+
+.image-carrers:hover img {
+    transform: scale(1.1);
+}
+
+.name-company {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+// Arah Carrers 
+
+.card-job {
+    transition: all 0.5s ease;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+p.categories-job {
+    color : #000;
+    text-align: right;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.title-job-available {
+    padding-top: 10px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.title-job-available h4 {
+    margin-bottom: 10px;
+}
+
+.footer-card-job {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+
+.footer-card-job h5 {
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.button-card {
+    background-color: #049825;
+    text-align: center;
+    padding: 10px 0;
+    transition: all 0.2s ease;
+    margin-top: 20px;
+}
+
+.button-card a {
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.card-job:hover {
+    transition: all 0.2s ease;
+    background-color: #049825;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    transform: translateY(-10px);
+
+    & p.categories-job {
+        color: #fff;
+        transition: all 0.2s ease;
+    } 
+
+    & .button-card {
+        margin-top: 20px;
+        background-color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        transition: all 0.2s ease;
+    }
+    
+    & .button-card a {
+        color: #049825;
+        transition: all 0.2s ease;
+        font-weight: 700;
+    }
+
+    & .title-job-available {
+        color: #fff;
+        transition: all 0.2s ease;
+    }
+
+    & .footer-card-job h5 {
+        font-size: 14px;
+        color: #fff;
+        transition: all 0.2s ease;
+    }
+}
+
+.button-back {
+    margin: auto;
+    width: 19.1%;
+}
+
+.button-back a {
+    background-color: #049825;
+    color: #fff;
+    font-weight: 700;
+    padding: 15px 55px;
+    transition: all 0.5s ease;
+}
+
+.button-back:hover {
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+}
+
+.d-none {
+    display : none;
+}
+
+.title-not-available {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title-not-available p {
+    margin: 0 200px;
+    margin-bottom: 20px;
+}
+
+img.img-custom {
+    padding: 0 300px;
+}
+
+img.logo-karir.urbanica {
+    max-width: 60%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+img.logo-karir.urbanica.white-logo {
+    display: none;
+}
+
+.card-job-single {
+    transition: all 0.5s ease;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.card-job-single a h4.name-job:hover {
+    color: #049825;
+    transition: all 0.5s;
+}
+
+.card-job-single a h4.name-job {
+    font-size: 18px;
+    transition: all 0.5s;
+    color: #000;
+}
+
+.card-job-single .address-company {
+    text-align: center;
+    font-size: 12px;
+}
+
+.skill-requirement {
+    margin-bottom: 80px;
+}
+
+.skill-requirement ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-requirement ul li {
+    float: left;
+    margin-left: 15px;
+    padding: 10px 15px;
+    border: 1px solid#000;
+}
+
+.skill-requirement ul li:first-child {
+    float: left;
+    margin-left: 0;
+}
+
+.detail-wrap-job .title {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 15px;
+}

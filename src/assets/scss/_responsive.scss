@@ -1,0 +1,34 @@
+@media (max-width: 675px) {
+    img.img-custom {
+        padding: 0;
+    }
+
+    .title-not-available p {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .button-back {
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+
+    .title-not-available h3 {
+        font-size: 24px;
+    }
+
+    .title-not-available p {
+        font-size: 12px;
+        line-height: 1.4em;
+    }
+
+    .button-back a {
+        background-color: #049825;
+        color: #fff;
+        font-weight: 700;
+        padding: 10px 40px;
+        transition: all 0.5s ease;
+        font-size: 14px;
+    }
+}

@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { CarrerArahComponent } from './carrer-arah/carrer-arah.component';
+import { CarrerCityguardComponent } from './carrer-cityguard/carrer-cityguard.component';
+import { CarrerChampoilComponent } from './carrer-champoil/carrer-champoil.component';
+import { CarrerUrbanicaComponent } from './carrer-urbanica/carrer-urbanica.component';
 import { CarrersComponent } from './carrers/carrers.component';
 import { IndexComponent } from './index/index.component';
 import { Index2Component } from './index2/index2.component';
@@ -7,6 +11,7 @@ import { Index3Component } from './index3/index3.component';
 import { Index4Component } from './index4/index4.component';
 import { Index5Component } from './index5/index5.component';
 import { Index6Component } from './index6/index6.component';
+import { SingleJobComponent } from './single-job/single-job.component';
 
 const routes: Routes = [
     {
@@ -40,7 +45,28 @@ const routes: Routes = [
     {
         path: 'carrers',
         component: CarrersComponent
+    },
+    {
+        path: 'carrers/arah',
+        component: CarrerArahComponent
+    },
+    {
+        path: 'carrers/champoil',
+        component: CarrerChampoilComponent
+    },
+    {
+        path: 'carrers/cityguard',
+        component: CarrerCityguardComponent
+    },
+    {
+        path: 'carrers/urbanica',
+        component: CarrerUrbanicaComponent
+    },
+    {
+        path: 'carrers/urbanica/single-job',
+        component: SingleJobComponent
     }
+    
 ];
 
 @NgModule({

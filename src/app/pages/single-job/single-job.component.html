@@ -1,0 +1,246 @@
+  <!--Navbar Start-->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark" (window:scroll)="windowScroll()"
+    id="navbar" style="background: #fff; box-shadow: 0 0 10px 0 rgb(0 0 0 / 6%);">
+    <div class="container">
+      <!-- LOGO -->
+      <a class="navbar-brand logo" href="/">
+        <img src="assets/images/escalogo.png" alt="Esca Group Logo" class="logo-dark" height="45" />
+        <img src="assets/images/escalogo.png" alt="Esca Group Logo" class="logo-light" height="45" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+        <i class="mdi mdi-menu"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mx-auto navbar-center" id="mySidenav">
+          <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}">
+            <a href="../" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#features'" class="nav-link">About</a>
+          </li>
+          <li class="nav-item" [ngClass]="{'active':currentSection === 'pricing'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#pricing'" class="nav-link"
+              [ngxScrollToOffset]="5">Division</a>
+          </li>
+          <li class="nav-item" [ngClass]="{'active':currentSection === 'blog'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#blog'" class="nav-link" [ngxScrollToOffset]="5">News</a>
+          </li>
+          <li class="nav-item" [ngClass]="{'active':currentSection === 'carrers'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#carrers'" class="nav-link" [ngxScrollToOffset]="5">Carrers</a>
+          </li>
+          <li class="nav-item" [ngClass]="{'active':currentSection === 'contact'}">
+            <a href="javascript: void(0);" [ngxScrollTo]="'#contact'" class="nav-link" [ngxScrollToOffset]="5">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-center">
+          <li class="nav-item">
+            <a href="javascript: void(0);" class="nav-link" (click)="loginModal(content)">Log
+              in</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+  <div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
+    <!-- Hero Start -->
+    <section class="hero-1-bg section-sub mt-10" style="background-image: url(assets/images/bg-urbanica.jpg)" id="home">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-12">
+            <h1 class="hero-1-title text-white font-weight-bold mb-4 text-center">Apply Form - Urbanica</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero End -->
+    <!-- Content -->
+    <section class="section new-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="single-job-wrap">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="card-job-single">
+                                    <div class="body-card-job-single">
+                                        <div class="title-job-detail">
+                                            <h2>Front Office</h2>
+                                            <p>PT.Roda Urban Nusantara</p>
+                                        </div>
+                                        <div class="detail-wrap-job">
+                                          <div class="title"> 
+                                            Requirement
+                                          </div>
+                                          <div class="list-requirment">
+                                            <ul>
+                                              <li>
+                                                Pria dan Wanita
+                                              </li>
+                                              <li>
+                                                Usia Maks 38thn 
+                                              </li>
+                                              <li>
+                                                Pendidikan Min.SMA/K Sederajat
+                                              </li>
+                                              <li>
+                                                Berpengalaman Dibidangnya 
+                                              </li>
+                                              <li>
+                                                Mampu bekerjasama dengan tim
+                                              </li>
+                                            </ul>
+                                          </div>
+                                          <div class="list-jobdesk">
+                                            <div class="title"> 
+                                              Jobdesk
+                                            </div>
+                                            <ul>
+                                              <li>
+                                                 jobdesk
+                                              </li>
+                                              <li>
+                                                jobdesk
+                                              </li>
+                                              <li>
+                                                jobdesk
+                                              </li>
+                                            </ul>
+                                          </div>
+                                          <div class="skill-requirement">
+                                            <div class="title"> 
+                                              Skill
+                                            </div>
+                                              <ul>
+                                                <li>Skill Requirement</li>
+                                                <li>Skill Requirement</li>
+                                              </ul>  
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-job-single">
+                                  <form action="" class="form-apply-job">
+                                      <div class="form-group">
+                                        <label for="Firsname">First Name</label>
+                                        <input type="text" class="form-control" placeholder="First Name" name="firstname" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="Lastname">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Last Name" name="lastname" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="nik">NIK</label>
+                                        <input type="number" class="form-control" placeholder="NIK" name="nik" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="gender">Gender</label>
+                                        <select name="gender" class="form-control" required>
+                                          <option value="1">Laki Laki</option>
+                                          <option value="2">Perempuan</option>
+                                        </select>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="number" class="form-control" placeholder="Phone Number" name="phonenumber" required>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="document">Document</label>
+                                        <input type="file" class="form-control" placeholder="" name="document" required>
+                                      </div>
+                                  </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card-job-single">
+                                    <div class="card-body-job-single">
+                                        <div class="title-job-available">
+                                            <img src="assets/images/urbanica-logo.png" alt="logo Urbanica" class="img-fluid mx-auto logo-karir urbanica dark-logo">
+                                            <a href=""><h4 class="name-job">PT. RODA URBAN NUSANTARA</h4></a>
+                                            <p>Jasa / Pelayanan</p>
+                                        </div>
+                                        <div class="address-company">
+                                            <p>Jl. Kapuk Kencana No.36A, RT.2/RW.3, Kapuk Muara, Kec. Penjaringan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14460</p>
+                                        </div>
+                                        <div class="button-card">
+                                            <a href="" class="">Company Details</a>   
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-job-single">
+                                  <div class="card-body-job-single">
+                                      <div class="title-job-available">
+                                        <h4 class="name-job">Share This Job</h4>
+                                      </div>
+                                      <div class="address-company">
+                                          <p>Jl. Kapuk Kencana No.36A, RT.2/RW.3, Kapuk Muara, Kec. Penjaringan, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14460</p>
+                                      </div>
+                                      <div class="button-card">
+                                          <a href="" class="">Company Details</a>   
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <app-footer></app-footer>
+  </div>
+
+  <ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-body">
+      <div class="text-center">
+        <h3 class="title mb-4">Welcome To Esca</h3>
+        <h4 class="text-uppercase text-primary"><b>Login</b></h4>
+      </div>
+      <div class="login-form mt-4">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Username / Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Youremail@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <a href="javascript: void(0);" class="float-right text-muted font-size-15">Forgot Password.?</a>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label font-size-15" for="customCheck1">Remember Me</label>
+          </div>
+          <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary">Login <i-feather class="icon-size-15 icon ml-1"
+                name="arrow-right-circle"></i-feather></button>
+          </div>
+        </form>
+        <div class="position-relative text-center mt-4">
+          <span class="login-border"></span>
+          <p class="social-login text-muted font-size-17">Social Login</p>
+        </div>
+        <div class="text-center">
+          <ul class="list-inline mt-2 mb-3">
+            <li class="list-inline-item mr-3"><a href="javascript: void(0);" class="login-social-icon icon-primary">
+                <i-feather class="icon-xs" name="facebook"></i-feather>
+              </a></li>
+            <li class="list-inline-item mr-3"><a href="javascript: void(0);" class="login-social-icon icon-info">
+                <i-feather class="icon-xs" name="twitter"></i-feather>
+              </a></li>
+            <li class="list-inline-item mr-3"><a href="javascript: void(0);" class="login-social-icon icon-danger">
+                <i-feather class="icon-xs" name="instagram"></i-feather>
+              </a></li>
+            <li class="list-inline-item"><a href="javascript: void(0);" class="login-social-icon icon-success">
+                <i-feather class="icon-xs" name="linkedin"></i-feather>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ng-template>
